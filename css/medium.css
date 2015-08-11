@@ -1,0 +1,122 @@
+/* 
+Medium stylesheet
+ 
+1 Layout
+2 Backgrounds
+3 Navigation
+4 Typography 
+5 Links
+
+/* -------------------------------------------------------------------------------------- 
+Layout - border-radius ie9+ :content after tab indicators ie8+
+-------------------------------------------------------------------------------------- */
+body {
+width:96em;
+max-width:100%;
+margin:0 auto;
+padding:0;
+}
+
+#wrapper {
+margin:1em 1%;
+box-shadow: 0 0 20px #333;
+}
+
+header[role] {
+border-top-right-radius:4px;
+border-top-left-radius:4px;
+background-size: auto;
+}
+
+#main article {
+position:relative;
+}
+
+footer[role] {
+border-bottom-right-radius:4px;
+border-bottom-left-radius:4px;
+}
+
+.gutter {
+padding:0 2%;
+}
+
+header[role] .gutter {
+padding:0 2%;
+}
+
+footer[role] .gutter {
+padding:0 1%;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Backgrounds
+-------------------------------------------------------------------------------------- */
+body {
+background:#ccc;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Typography
+-------------------------------------------------------------------------------------- */
+#main p {
+margin-top:0;
+}
+
+#main ul,#main ol {
+margin:1em 0;
+}
+
+footer[role] {
+text-align:right
+}
+
+/* -------------------------------------------------------------------------------------- 
+Links
+-------------------------------------------------------------------------------------- */
+
+
+/* -------------------------------------------------------------------------------------- 
+Images 2d transforms, box-shadow - ie9+
+-------------------------------------------------------------------------------------- */
+.left {
+float:left;
+}
+
+.right {
+float:right;
+}
+
+.wide {
+width:70%;
+}
+
+/* necessary to specify width or div will go to 100% even tho floated */
+.total {
+width:100%;
+}
+
+.half {
+width:25%;
+}
+
+.figure img {
+max-width:100%;
+border:1px solid #ccc;
+padding:5px;
+margin:5px;
+box-shadow:4px 4px 3px #666;
+}
+
+#main .figure p.rite {
+margin-left:62%;
+}
+
+#main .figure p.lef {
+margin-right:40%;
+}
+
+#main .figure p {
+margin-top:65px;
+}
+

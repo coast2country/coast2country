@@ -1,0 +1,250 @@
+/* 
+1 Reset  
+2 Layout
+3 Backgrounds
+4 Typography 
+5 Images
+6 Links
+/* -------------------------------------------------------------------------------------- 
+Reset 
+-------------------------------------------------------------------------------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside#page,canvas,details,embed,figure,figcaption,footer[role],header[role],hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+}
+
+body {
+line-height: 1;
+}
+
+ol,ul {
+list-style:none;
+}
+
+blockquote,q {
+quotes:none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+content:'';
+content:none;
+}
+
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+
+cite {
+font-style:italic;
+}
+
+strong {
+font-weight:700;
+}
+
+article, aside#page, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+	}
+/* -------------------------------------------------------------------------------------- 
+Layout - use % for widths, use padding only on top and bottom of sections using ems
+-------------------------------------------------------------------------------------- */
+header[role]{
+margin:0;
+padding:3em 0;
+}
+
+#content {
+margin:0;
+padding:0;
+}
+
+#main {
+margin:0;
+padding:1em 0;
+}
+
+footer[role]{
+margin:0;
+padding:1em 0;
+}
+
+.gutter {
+padding:0 2%;
+}
+
+/* Self-clear floats
+--------------------*/
+.group:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Backgrounds 
+-------------------------------------------------------------------------------------- */
+header[role] {
+color:#fff;
+background:#215030;
+}
+
+#content {
+color:#000;
+background:#fff;
+}
+
+#main {
+color:#000;
+background-color:#fff;
+}
+
+footer[role] {
+color:#fff;
+background: #215030; 
+}
+
+/* -------------------------------------------------------------------------------------- 
+Typography 
+--------------------------------------------------------------------------------------  */
+/*Specify font size in ems so it resizes in ie all.
+set to 62,5% so can specify height equiv in pixels 1.2em = 12px*/ 
+body {
+font-family:Verdana, Helvetica, Arial, sans-serif;
+font-size:62.5%; 
+color:#555;
+-webkit-text-size-adjust:100%; /* fix ios rotation bug */
+}
+
+header[role]  h1  {
+font-size:3.2em;
+font-weight: normal;
+font-variant:small-caps;
+font-family:Verdana, Helvetica, Arial, sans-serif;
+letter-spacing:1px;
+}
+
+/* --------------------
+Main text-shadow ie10+
+---------------------- */
+#main h1,#main h2,#main h3, #main h4 {
+margin:.5em 0;
+color:#215030;
+text-shadow:1px 1px #ccc;
+}
+
+#main h1 {
+font-size:2.4em;
+}
+
+#main h2 {
+font-size:2.2em;
+
+}
+
+#main p {
+margin:1em 0 1.6em;
+font-size:1.4em;
+line-height:1.2;
+text-rendering:optimizeLegibility;
+word-wrap:break-word;
+}
+
+#main ul {
+margin:1em 0;
+list-style:inside disc;
+font-size:1.4em;
+line-height:1.3;
+}
+
+#main ol>li{
+margin:1em 0;
+list-style:inside decimal;
+font-size:1.4em;
+line-height:1.3;
+}
+
+#main ol ol li{
+margin:1em;
+font-size:1em;
+}
+
+
+
+/* -------------------------------------------------------------------------------------- 
+Images
+-------------------------------------------------------------------------------------- */
+.imgClass {
+max-width:100%;/* flexible images */
+}
+
+#main .figure p {
+margin-top:5px;
+font-style:italic;
+}
+
+.figure img {
+border:none;
+padding:0;
+margin:0;
+}
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter
+{
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+/* -------------------------------------------------------------------------------------- 
+Links 
+-------------------------------------------------------------------------------------- */
+header[role]  h1 a  {
+color:#fff;
+text-decoration:none;
+}
+
+#main a:link{
+color:#215030;
+}
+
+#main a:visited {
+color:#555;
+}
+
+#main a:hover {
+background-color:#ccc;
+}
+
+#main a:focus  {
+color:maroon;
+background-color:#ccc;
+}
+
+#main a:active{
+color:red;
+background-color:#ccc;
+}
+
+footer[role] a {
+color:#fff;
+}
